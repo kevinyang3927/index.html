@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Kevin Yang</h1>
+  <p>An Aspiring Software Engineer</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Resume</a>
+  <a href="https://www.facebook.com/kevin.yang.142892">Facebook</a>
+  <a href="https://www.linkedin.com/in/kevin-yang-137926198/">Linkedin</a>
+  <a href="https://github.com/mineturtle216">GitHub</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Hi, I'm Kevin, and I'm currently studying Software Engineering at University of Waterloo. </p>
+    <p>This website is for showcasing some of my projects.</p>
+    <h3>Hobbies and Interests</h3>
+    <p>Skiing</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <p>Video Games</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <p>Chess</p>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h>Maze Solving Car</h2>
+    <h2>Maze Solving Car</h2>
+    <h5>Finished in December, 2019</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>A picture of the finished product</p>
+    <p>The car has sensors on the left, right and front which can detect for walls and can determine a map of the maze. The car first traverses through the maze and determines the structure of the maze, then the car with travel through the maze again using the shortest path possible by using an algorithm. The motors have encoders of them which enables for more precise tracking of the cars movement which allows for more precision when turning and moving.</p>
+    <br>
+
+    <h2>Tower Defense Game</h2>
+    <h5>Finished in January, 2019</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>A screenshot of the game</p>
+    <p>A tower defense game that was built based on a 2D array. The grid based system allows for automatic path generation based on user inputs. The game was built from strach by myself and four friends. The game includes music, settings, save files, achievements and many other features. The game has three unique stages and an endless round which has randomly generated enemies which increases in difficulty as the user progresses.</p>
+
+    <h2>Vex Robotic Competition</h2>
+    <h5>Finished in January, 2019</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>A picture of the finished product</p>
+    <p>Vex Robotic Competition is a Canadian robitcs competition where every year they propose a new challenge. The 2019 challenge was to score as many points as possible. Some methods to score were to; retrieve balls on the field and shoot at targets, flip caps and place them on poles, and to climb a platform. Our team built a robot that was able to retrieve balls and shoot them at the targets and climb the platform. Additionally, our robot was able to travel in any direction through the use of omni wheels.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p4>Email: kevinyang3927@gmail.com | Instagram: @kevin.__.yang</p4>
+</div>
+
+</body>
+</html>
+
